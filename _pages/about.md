@@ -30,7 +30,7 @@ latest_posts:
   /* Desktop and tablet */
   @media (min-width: 576px) {
     .post article > .profile {
-      width: 22% !important;
+      width: 20% !important;
       margin-top: -35px;
     }
   }
