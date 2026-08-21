@@ -7,7 +7,7 @@ subtitle: PhD in Neuroscience, PostDoc in Computational Neuroscience
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Room 368, No.6 Science Buildings</p>
     <p>No. 800 Dongchuan Road, Minhang District</p>
