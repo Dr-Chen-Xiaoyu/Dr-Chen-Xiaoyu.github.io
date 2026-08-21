@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD in Neuroscience (fMRI), PostDoc in Computational Neuroscience (large-scale modeling)
+subtitle: PhD in Neuroscience, PostDoc in Computational Neuroscience
 
 profile:
   align: right
