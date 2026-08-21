@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: XYC # the website title (if blank, full name will be used instead)
+title:# the website title (if blank, full name will be used instead)
 first_name: Xiaoyu
 middle_name: a
 last_name: Chen
