@@ -45,7 +45,7 @@ cv:
         position: PostDoc
         location: Shanghai, China
         start_date: 2023
-        end_date: now
+        end_date: Present
         summary: Whole-brain modelling and NeuroAI research
         highlights:
           - NeuroAI
@@ -80,7 +80,7 @@ cv:
           - Deep learning
           - Whole-brian modelling
         start_date: 2023-01-01
-        end_date: now
+        end_date: Present
 
     References:
       - name: Professor Douglas Zhou
