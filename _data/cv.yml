@@ -28,8 +28,8 @@ cv:
         end_date: 2022
         score: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - Neuromodulation (DBS)
+          - fMRI data analysis
 
       - institution: College of Life Sciences, Nankai University
         location: Tianjin, China
@@ -38,8 +38,7 @@ cv:
         start_date: 2010
         end_date: 2014
         highlights:
-          - Description 1.
-          - Description 2.
+          - Animal experiments and neural recording
 
     Experience:
       - company: Institute of Natural Sciences and School of Mathematical Sciences, Shanghai Jiao Tong University
@@ -49,14 +48,14 @@ cv:
         end_date: now
         summary: Whole-brain modelling and NeuroAI research
         highlights:
-          - Description 1.
-          - Description 2.
+          - NeuroAI
+          - Deep learning for whole-brain modelling
 
     Skills:
-      - name: Deep Learning
+      - name: BrainPy&JAX
         level: Master
         icon: fa-solid fa-hashtag
-        keywords: "BPTT Training"
+        keywords: "4-years user"
 
     Languages:
       - name: Chinese
@@ -66,22 +65,26 @@ cv:
         summary: "Fluent"
 
     Interests:
+      - name: Deep Learning
+        icon: fa-solid fa-tag
+        keywords: "BPTT Training"
+        
       - name: Computational neuroscience
         icon: fa-solid fa-tag
         keywords: "Whole-brian modelling"
 
     Projects:
       - name: Deep learning informed whole-brain modelling 
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+        summary: Incorporation of cortical hierarchy improves fitting of functional connectome (FC) from structural connectome (SC) using reduced Wong-Wang model. However, its necessity remains unknown due to difficulty in model training as well as limited data modality. Here, we developed a connectome-based back-propagation training procedure that enables nodal parameters to be trained independently across cortical nodes, thereby exploring nodal heterogeneity with full degrees of freedom. We then introduced effective connectome (EC) from direct electrical stimulation dataset F-TRACT, and adopted a two-step training pipeline that integrates information from both EC and FC. In the well-trained model, hierarchical specialization anatomically emerges that recurrent strength and intrinsic noise level both increase along the hierarchical axis from sensory-motor to association areas. Moreover, we found an empirical divergence that node strength of EC is positively correlated with hierarchy, whereas node strength of FC shows negative correlation. With demonstrated impact of heterogeneity of node dynamics as to modeled node strength, we finally illustrated a unique relationship between hierarchy, connectomes and model parameters. Our cross-modality work highlights the underlying organization of brain-wide dynamics, by paving the way for deep learning enforced biophysical modeling.
         highlights:
           - Deep learning
           - Whole-brian modelling
         start_date: 2023-01-01
-        end_date: --
+        end_date: now
 
     References:
       - name: Professor Douglas Zhou
-        icon: fa-solid fa-laptop
+        icon: fa-solid fa-thumbtack
         reference: Professor, Lab of Computational Neuroscience, Institute of Natural Sciences and School of Mathematical Sciences, Shanghai Jiao Tong University, Shanghai, China.
 
       - name: Professor Songting Li
