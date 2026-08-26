@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p>chenxy_sjtu@sjtu.edu.cn</p>
     <p>Room 368, No.6 Science Buildings</p>
-    <p>No. 800 Dongchuan Road, Minhang District</p>
-    <p>Shanghai, China</p>
+    <p>Dongchuan Road 800, Shanghai, China</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
