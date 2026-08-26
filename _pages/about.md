@@ -45,8 +45,12 @@ latest_posts:
   }
 </style>
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I got my Neurobiology Ph.D. from Institute of Neuroscience (ION), Chinese Academy of Sciences. Now, I am a Postdoc in Lab of Computational Neuroscience, Institute of Natural Sciences (INS) and School of Mathematical Sciences, Shanghai Jiao Tong University. My current supervisors are Prof. Douglas Zhou and Prof. Songting Li.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My overarching research goal is to use deep learning to train a unified, brain-wide biophysical model that can reproduce multimodal neural data, including fMRI, EEG, and intracranial EEG, and capture key dynamical properties of the brain, such as signal propagation, timescale hierarchies, and criticality. Ultimately, I hope this engineering effort will advance our mechanistic understanding of large-scale brain functions (e.g., working memory or attention), guide the design of targeted brain stimulation strategies, and inspire the development of large-scale AI systems.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+#Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+#Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+#Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
