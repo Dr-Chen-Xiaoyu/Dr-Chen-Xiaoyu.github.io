@@ -43,6 +43,9 @@ latest_posts:
   }
 </style>
 
-I got my Neurobiology Ph.D. from Institute of Neuroscience (ION), Chinese Academy of Sciences. Now, I am a Postdoc in Lab of Computational Neuroscience, Institute of Natural Sciences (INS) and School of Mathematical Sciences, Shanghai Jiao Tong University. My current supervisors are Prof. Douglas Zhou and Prof. Songting Li.
+
+<p style="font-size: 18px;">
+I got my Ph.D. from Institute of Neuroscience (ION), Chinese Academy of Sciences. Now, I am a Postdoc in Lab of Computational Neuroscience, Institute of Natural Sciences (INS) and School of Mathematical Sciences, Shanghai Jiao Tong University. My current supervisors are Prof. Douglas Zhou and Prof. Songting Li.
 
 My overarching research goal is to use deep learning to train a unified, brain-wide biophysical model that can reproduce multimodal neural data, including fMRI, EEG, and intracranial EEG, and capture key dynamical properties of the brain, such as signal propagation, timescale hierarchies, and criticality. Ultimately, I hope this engineering effort will advance our mechanistic understanding of large-scale brain functions (e.g., working memory or attention), guide the design of targeted brain stimulation strategies, and inspire the development of large-scale AI systems.
+</p>
