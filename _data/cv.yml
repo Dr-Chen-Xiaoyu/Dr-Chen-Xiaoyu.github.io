@@ -4,7 +4,7 @@ cv:
   email: chenxy_sjtu@sjtu.edu.cn
   location: Shanghai, China
   image: ""
-  summary: I am an AI-for-neuroscience researcher working to bridge deep learning and brain-wide biophysical modeling.
+  summary: I have a background in neuroscience, with PhD training focused on brain-wide data analysis. I am now an AI-for-neuroscience researcher working to bridge deep learning and brain-wide biophysical modeling.
 
   social_networks:
     - network: GitHub
@@ -33,7 +33,7 @@ cv:
 
       - institution: College of Life Sciences, Nankai University
         location: Tianjin, China
-        url: https://sky.nankai.edu.cn/
+        url: http://en.sky.nankai.edu.cn/
         area: Biological Technology
         studyType: B.S.
         start_date: 2010
