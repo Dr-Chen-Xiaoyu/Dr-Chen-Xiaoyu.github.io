@@ -13,7 +13,7 @@ cv:
   address:
     street: Room 368, No.6 Science Buildings, 800 Dongchuan Road
     city: Shanghai
-    region: Shanghai
+    region: Minhang District
     postalCode: 200240
     countryCode: CN
 
@@ -33,12 +33,14 @@ cv:
 
       - institution: College of Life Sciences, Nankai University
         location: Tianjin, China
+        url: https://sky.nankai.edu.cn/
         area: Biological Technology
         studyType: B.S.
         start_date: 2010
         end_date: 2014
         highlights:
-          - Animal experiments and neural recording
+          - Animal experiments 
+          - Neural recording
 
     Experience:
       - company: Institute of Natural Sciences and School of Mathematical Sciences, Shanghai Jiao Tong University
@@ -52,7 +54,12 @@ cv:
           - Deep learning for whole-brain modelling
 
     Skills:
-      - name: BrainPy&JAX
+      - name: JAX
+        level: Master
+        icon: fa-solid fa-hashtag
+        keywords: "4-years user"
+        
+      - name: BrainPy
         level: Master
         icon: fa-solid fa-hashtag
         keywords: "4-years user"
