@@ -288,13 +288,22 @@ def parse_publications(pub_dir):
             front_matter = yaml.safe_load(front_matter_match.group(1))
             if front_matter.get('published') is False:
                 continue
-            
+
+            paper_url = front_matter.get('paperurl') or ''
+            if not paper_url:
+                doi_link = re.search(
+                    r'''href\s*=\s*["'](https://doi\.org/[^\s"'<>]+)["']''',
+                    front_matter.get('citation') or '',
+                )
+                if doi_link:
+                    paper_url = doi_link.group(1)
+
             # Extract publication details
             pub_entry = {
                 "name": front_matter.get('title', ''),
                 "publisher": front_matter.get('venue', ''),
                 "releaseDate": front_matter.get('date', ''),
-                "website": front_matter.get('paperurl', ''),
+                "website": paper_url,
                 "summary": front_matter.get('excerpt', '')
             }
             

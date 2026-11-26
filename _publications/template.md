@@ -7,8 +7,10 @@ permalink: /publication/paper-1
 excerpt: 'one sentence summary'
 date: 2024-02-17
 venue: 'Journal'
-paperurl: 'doi or jounral cite of this paper'
+# paperurl: 'doi or jounral cite of this paper'
 citation: 'citation in APA citation style with full name list'
 ---
 
-Abstract: write paper's abstract
+## Abstract
+
+Write the paper's abstract here.
