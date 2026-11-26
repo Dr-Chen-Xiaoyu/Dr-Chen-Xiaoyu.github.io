@@ -158,76 +158,99 @@ def extract_author_info(config):
     
     return author_info
 
+def parse_three_line_cv_entry(entry):
+    """Read a title and dates, an institution and location, and a summary."""
+    lines = entry.strip().splitlines()
+    if len(lines) < 3:
+        return None
+
+    heading = re.fullmatch(
+        r'(.+?) · (\d{4})\s*[-–]\s*(\d{4}|present)(?:<br\s*/?>)?',
+        lines[0].strip(),
+        re.IGNORECASE,
+    )
+    if not heading:
+        return None
+
+    institution, separator, _ = lines[1].strip().rpartition(' · ')
+    if not separator:
+        return None
+
+    title, start_year, end_year = heading.groups()
+    institution = re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', institution)
+    return title.strip('*'), institution, start_year, end_year, lines[2].strip()
+
+
 def parse_education(education_text):
     """Parse education section from markdown."""
     education_entries = []
-    
-    # Extract education entries
     entries = re.findall(r'\* (.*?)(?=\n\*|\Z)', education_text, re.DOTALL)
-    
+
     for entry in entries:
-        # Parse degree, institution, and year
-        match = re.match(r'([^,]+), ([^,]+), (\d{4})(.*)', entry.strip())
-        if match:
-            degree, institution, year, additional = match.groups()
-            
-            # Extract GPA if available
-            gpa_match = re.search(r'GPA: ([\d\.]+)', additional)
-            gpa = gpa_match.group(1) if gpa_match else None
-            
-            education_entries.append({
-                "institution": institution.strip(),
-                "area": degree.strip(),
-                "studyType": "",
-                "startDate": "",
-                "endDate": year.strip(),
-                "gpa": gpa,
-                "courses": []
-            })
-    
+        details = parse_three_line_cv_entry(entry)
+        if details:
+            degree, institution, start_year, end_year, additional = details
+        else:
+            match = re.match(r'([^,]+), (.+?), (?:(\d{4})\s*[-–]\s*)?(\d{4})(.*)', entry.strip())
+            if not match:
+                continue
+            degree, institution, start_year, end_year, additional = match.groups()
+            institution = re.sub(r'^\[([^]]+)\]\(.*\)$', r'\1', institution.strip())
+
+        gpa_match = re.search(r'GPA: ([\d\.]+)', additional)
+        gpa = gpa_match.group(1) if gpa_match else None
+
+        education_entries.append({
+            "institution": institution,
+            "area": degree.strip(),
+            "studyType": "",
+            "startDate": start_year or "",
+            "endDate": end_year,
+            "gpa": gpa,
+            "courses": []
+        })
+
     return education_entries
+
 
 def parse_work_experience(work_text):
     """Parse work experience section from markdown."""
     work_entries = []
-    
-    # Extract work entries
     entries = re.findall(r'\* (.*?)(?=\n\*|\Z)', work_text, re.DOTALL)
-    
+
     for entry in entries:
-        lines = entry.strip().split('\n')
-        if not lines:
-            continue
-            
-        # Parse position and company
-        first_line = lines[0].strip()
-        position_match = re.match(r'(.*?), (.*?)(?:, |$)', first_line)
-        
-        if position_match:
+        highlights = []
+        details = parse_three_line_cv_entry(entry)
+        if details:
+            position, company, start_date, end_date, summary = details
+        else:
+            lines = entry.strip().split('\n')
+            position_match = re.match(r'(.*?), (.*?)(?:, |$)', lines[0].strip())
+            if not position_match:
+                continue
             position, company = position_match.groups()
-            
-            # Extract dates if available
+
             date_match = re.search(r'(\d{4})\s*-\s*(\d{4}|present)', entry, re.IGNORECASE)
             start_date = date_match.group(1) if date_match else ""
             end_date = date_match.group(2) if date_match else ""
-            
-            # Extract highlights
-            highlights = []
+            summary = ""
+
             for line in lines[1:]:
-                if line.strip().startswith('*') or line.strip().startswith('-'):
+                if line.strip().startswith(('*', '-')):
                     highlights.append(line.strip()[1:].strip())
-            
-            work_entries.append({
-                "company": company.strip(),
-                "position": position.strip(),
-                "website": "",
-                "startDate": start_date,
-                "endDate": end_date,
-                "summary": "",
-                "highlights": highlights
-            })
-    
+
+        work_entries.append({
+            "company": company.strip(),
+            "position": position.strip(),
+            "website": "",
+            "startDate": start_date,
+            "endDate": end_date,
+            "summary": summary,
+            "highlights": highlights
+        })
+
     return work_entries
+
 
 def parse_skills(skills_text):
     """Parse skills section from markdown."""
