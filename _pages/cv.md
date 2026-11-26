@@ -8,14 +8,14 @@ redirect_from:
 ---
 
 **Xiaoyu Chen, Ph.D.**<br>
-PostDoc, Shanghai Jiao Tong University, Shanghai, China
-Address: Room 368, No.6 Science Buildings, 800 Dongchuan Road, Minhang District, Shanghai, China
-Email: [xy_chen_1991@outlook.com](mailto:xy_chen_1991@outlook.com) ·  [chenxy_sjtu@sjtu.edu.cn](mailto:chenxy_sjtu@sjtu.edu.cn) 
+PostDoc, Shanghai Jiao Tong University, Shanghai, China<br>
+Address: Room 368, No.6 Science Buildings, 800 Dongchuan Road, Minhang District, Shanghai, China<br>
+Email: [xy_chen_1991@outlook.com](mailto:xy_chen_1991@outlook.com) ·  [chenxy_sjtu@sjtu.edu.cn](mailto:chenxy_sjtu@sjtu.edu.cn)<br>
 Website: [Homepage](https://dr-chen-xiaoyu.github.io/)  ·  [GitHub](https://github.com/Dr-Chen-Xiaoyu) 
 
-I have a background in neuroscience, with PhD training focused on brain-wide data analysis. I am now an AI-for-neuroscience researcher working to bridge deep learning and brain-wide biophysical modeling.
+Brief Profile: With a background in neuroscience and postdoctoral training in computational neuroscience, I am now a researcher aiming to bridge deep learning and brain-wide biophysical modelling towards a unified foundation model of human brain.
 
-Experience
+Research Experience
 ---------------
 
 * **2023-2026 · PostDoc in Computational Neuroscience**<br>
@@ -36,7 +36,7 @@ Education
   Supervisor: Dr. Tao Zhang<br>
   Animal experiments and neural recording.
 
-Selected research project
+Selected Project
 -------------------------
 
 **2023-2026 · Deep Learning–Informed Whole-Brain Modelling**
@@ -46,7 +46,7 @@ We developed connectome-based backpropagation for the reduced Wong–Wang model 
 * In the trained model, recurrent strength and intrinsic noise increased along the cortical hierarchy from sensorimotor to association areas.
 * Empirical node strength correlated positively with cortical hierarchy in the effective connectome and negatively in the functional connectome.
 
-Research expertise
+Research Expertise
 ------------------
 
 * **Computational Neuroscience** · Whole-brain biophysical modelling · AI-for-Neuroscience
@@ -64,7 +64,7 @@ Languages
 
 Chinese · English
 
-Academic references
+Academic References
 -------------------
 
 **Prof. Douglas Zhou** and **Prof. Songting Li**<br>

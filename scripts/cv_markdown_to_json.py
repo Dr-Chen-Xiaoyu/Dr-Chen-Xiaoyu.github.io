@@ -286,6 +286,8 @@ def parse_publications(pub_dir):
         front_matter_match = re.match(r'^---\s*(.*?)\s*---', content, re.DOTALL)
         if front_matter_match:
             front_matter = yaml.safe_load(front_matter_match.group(1))
+            if front_matter.get('published') is False:
+                continue
             
             # Extract publication details
             pub_entry = {
