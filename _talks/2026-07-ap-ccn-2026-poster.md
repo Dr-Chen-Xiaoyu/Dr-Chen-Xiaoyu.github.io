@@ -6,6 +6,7 @@ permalink: /talks/2026-07-ap-ccn-2026-poster/
 venue: "4th Asia-Pacific Computational and Cognitive Neuroscience Conference (AP-CCN 2026)"
 date: 2026-07-01
 date_precision: month
+excerpt_separator: ""
 location: "Singapore"
 ---
 

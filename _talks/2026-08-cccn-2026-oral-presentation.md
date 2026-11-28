@@ -6,6 +6,7 @@ permalink: /talks/2026-08-cccn-2026-oral-presentation/
 venue: "8th Chinese Computational and Cognitive Neuroscience Conference (CCCN 2026)"
 date: 2026-08-01
 date_precision: month
+excerpt_separator: ""
 location: "Chengdu, China"
 ---
 

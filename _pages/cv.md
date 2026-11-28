@@ -15,7 +15,7 @@ Website: [Homepage](https://dr-chen-xiaoyu.github.io/)  ·  [GitHub](https://git
 
 Brief Profile: With a background in neuroscience and postdoctoral training in computational neuroscience, I am now a researcher aiming to bridge deep learning and brain-wide biophysical modelling towards a unified foundation model of human brain.
 
-Research Experience
+Professional Experience
 ---------------
 
 * **2023-2026 · PostDoc in Computational Neuroscience**<br>

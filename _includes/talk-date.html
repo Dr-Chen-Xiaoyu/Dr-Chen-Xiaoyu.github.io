@@ -1,5 +1,0 @@
-{%- if include.talk.date_precision == "month" -%}
-  <time datetime="{{ include.talk.date | date: "%Y-%m" }}">{{ include.talk.date | date: "%B %Y" }}</time>
-{%- else -%}
-  <time datetime="{{ include.talk.date | date_to_xmlschema }}">{{ include.talk.date | date: "%B %d, %Y" }}</time>
-{%- endif -%}
