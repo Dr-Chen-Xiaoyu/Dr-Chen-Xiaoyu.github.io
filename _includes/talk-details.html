@@ -1,0 +1,18 @@
+{%- assign details = "" | split: "," -%}
+{%- assign talk_type = include.talk.type | default: include.talk.talk_type -%}
+{%- assign talk_venue = include.talk.venue -%}
+{%- assign talk_location = include.talk.location -%}
+
+{%- if talk_type and talk_type != empty -%}
+  {%- assign details = details | push: talk_type -%}
+{%- endif -%}
+{%- if talk_venue and talk_venue != empty and talk_venue != include.talk.title -%}
+  {%- assign details = details | push: talk_venue -%}
+{%- endif -%}
+{%- if talk_location and talk_location != empty -%}
+  {%- assign details = details | push: talk_location -%}
+{%- endif -%}
+
+{%- if details.size > 0 -%}
+  <p class="archive__item-excerpt" itemprop="description">{{ details | join: ", " | escape_once }}</p>
+{%- endif -%}

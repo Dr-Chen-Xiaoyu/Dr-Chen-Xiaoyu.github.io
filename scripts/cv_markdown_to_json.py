@@ -328,10 +328,13 @@ def parse_talks(talks_dir):
             front_matter = yaml.safe_load(front_matter_match.group(1))
             
             # Extract talk details
+            talk_date = front_matter.get('date', '')
+            if talk_date and front_matter.get('date_precision') == 'month':
+                talk_date = str(talk_date)[:7]
             talk_entry = {
                 "name": front_matter.get('title', ''),
                 "event": front_matter.get('venue', ''),
-                "date": front_matter.get('date', ''),
+                "date": talk_date,
                 "location": front_matter.get('location', ''),
                 "description": front_matter.get('excerpt', '')
             }
